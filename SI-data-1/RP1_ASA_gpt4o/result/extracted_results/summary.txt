@@ -1,0 +1,10 @@
+File Checksum Summary:
+Chain3D10.png: 7c6e918eb7b3988cb9279c42163feeee
+Chain3D100.png: c479f1cc0585f58ee0b99bdbcdb7c898
+Chain3D200.png: 1a8b232a01d92a241d8da4c59e03a273
+Chain3D400.png: 2d4a03fb8533fef71bab9fb154f06a0f
+Chain3D50.png: 78ef481b1a6bc86fa80ff277695da6ba
+h2vsN.png: d8db048f6760a3ca97cbf20598398dd6
+h2vsN_verified.png: 68dd73ab49466e699efb00a3d19a4d37
+Polymer_Chain_Simulation_Report.docx: f1649b913cc81a76d3df449d3d22289b
+summary.txt: 28cf809e980bae357391b9b6e8c42b6b

@@ -1,0 +1,29 @@
+Begin to execute Python
+Output: Average number of PNG boxes across all folders: 5.9
+
+Step 1 is finished
+Begin to execute Python
+Output: Folder name and count of PNG files:
+try1: 6 PNG files
+try2: 6 PNG files
+try3: 6 PNG files
+try4: 6 PNG files
+try5: 6 PNG files
+try6: 5 PNG files
+try7: 6 PNG files
+try8: 6 PNG files
+try9: 6 PNG files
+try10: 6 PNG files
+try11: 6 PNG files
+try12: 6 PNG files
+try13: 5 PNG files
+try14: 6 PNG files
+try15: 6 PNG files
+try16: 6 PNG files
+try17: 6 PNG files
+try18: 6 PNG files
+try19: 6 PNG files
+try20: 6 PNG files
+
+Step 2 is finished
+Mission complete.

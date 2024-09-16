@@ -1,0 +1,4 @@
+Write a Python program to perform the following tasks (steps (1) to (2) need to be repeated for 20 rounds, where i represents the i-th round):
+(1) First create a folder named try+str(i). Then execute the command 'python AI4SCI_VE13.py -s p1.txt -n i' in the command line (the current system is Windows). This is a batch file that executes another program, which will return some stdout, etc., and save some PNG image files. You can monitor in some way to determine whether the program has completed. 
+(2) After the program in (1) has finished, MOVE (NOT copy) all PNG images and word files in the current directory to the folder named try+str(i).
+(3) Repeat steps (1) and (2) for 20 rounds, then count the average number of PNG files in each folder and print out the count.

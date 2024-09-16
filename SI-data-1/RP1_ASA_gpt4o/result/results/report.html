@@ -1,0 +1,76 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Polymer Chain Simulation Experiment Report</title>
+    </head>
+    <body>
+        <h1>Polymer Chain Simulation Experiment Report</h1>
+        
+        <h2>Abstract</h2>
+        <p>
+        This report provides an analysis of a simulation study on polymer chains. 
+        The primary objective was to generate 2000 polymer chains consisting of N segments with random orientations in 3D space, 
+        calculate the mean squared end-to-end distance (h2(N)), and determine the relationship of h2(N) with N. 
+        Understanding the behavior of polymer chains is crucial for many applications in material science and biology, 
+        especially in predicting the physical properties of macromolecules. 
+        A key result from this study is the determination of the scaling exponent 'v' that characterizes the relationship between 
+        the mean squared end-to-end distance and the number of segments.
+        </p>
+        
+        <h2>Introduction</h2>
+        <p>
+        The study of polymer chains is significant in understanding the physical properties 
+        of macromolecules in materials science and biology. Polymers are large molecules made up of repeating subunits called monomers, 
+        and their structure affects their function and behavior in various environments. 
+        A polymer chain can be modeled as a series of connected segments, with each segment having a fixed length but random orientation. 
+        This random orientation gives rise to the study of random walks and their properties. 
+        The objective of this study was to simulate 2000 polymer chains for various lengths (N) ranging from 10 to 400 segments and analyze 
+        the mean squared end-to-end distance (h2(N)) as a function of N.
+        </p>
+        <p>
+        The end-to-end distance of a polymer chain is a measure of the spatial extent of the polymer, 
+        which impacts its physical properties such as viscosity, tensile strength, and diffusion. 
+        The theoretical background suggests that the mean squared end-to-end distance should scale with the number of segments as h2(N) ¡Ø N^v, 
+        where the exponent 'v' can indicate the type of polymer chain model, such as ideal (or Gaussian) chains, self-avoiding walks, or others. 
+        This study aims to empirically determine the scaling exponent 'v' and compare it with theoretical expectations for ideal polymer chains.
+        </p>
+        
+        <h2>Methods</h2>
+        <p>
+        The simulation was implemented using Python, leveraging the numpy library for numerical computations and matplotlib for data visualization. 
+        For each polymer chain, 3D unit vectors representing segment orientations were generated using a uniform distribution over a sphere. 
+        This method ensures that the directions of segments are uniformly distributed in three-dimensional space. 
+        The polymer chains were constructed by cumulatively adding these vectors starting from the origin, thus forming a random walk in three dimensions. 
+        The end-to-end distance was computed as the Euclidean distance between the first and last segment of each polymer chain. 
+        This computation was repeated for 2000 chains for each given N to obtain a statistically significant result. 
+        The mean squared end-to-end distance, h2(N), was calculated by averaging the squared end-to-end distances over the 2000 chains for each N value. 
+        To visualize the polymer chains, 50 random chain conformations were plotted for each N value. Additionally, a graph of h2(N) versus N was plotted to study the scaling behavior. 
+        Linear regression on log-transformed data was used to determine the scaling exponent 'v', providing insights into the relationship between h2(N) and N.
+        </p>
+        
+        <h2>Results</h2>
+        <p>
+        The results of the simulation are summarized in the table and figures below. 
+        The mean squared end-to-end distances for different N values were computed as follows:
+        </p>
+        <ul>
+        <li>h2(10) = 10.13</li><li>h2(50) = 48.85</li><li>h2(100) = 99.68</li><li>h2(200) = 202.86</li><li>h2(400) = 405.67</li>
+        </ul>
+        <p>
+        These values are close to the corresponding N values, as expected for an ideal polymer chain model where h2(N) is proportional to N. 
+        The scaling exponent 'v' was determined to be approximately 1.0024 through linear regression on the log-transformed values of N and h2(N). 
+        This value is consistent with the theoretical prediction for ideal chains, where 'v' is expected to be 1.
+        </p>
+        <h3>Figure: Chain Conformations for 10 segments</h3><img src="Chain3D10.png" alt="Chain3D10.png" style="width:400px;"><br><h3>Figure: Chain Conformations for 50 segments</h3><img src="Chain3D50.png" alt="Chain3D50.png" style="width:400px;"><br><h3>Figure: Chain Conformations for 100 segments</h3><img src="Chain3D100.png" alt="Chain3D100.png" style="width:400px;"><br><h3>Figure: Chain Conformations for 200 segments</h3><img src="Chain3D200.png" alt="Chain3D200.png" style="width:400px;"><br><h3>Figure: Chain Conformations for 400 segments</h3><img src="Chain3D400.png" alt="Chain3D400.png" style="width:400px;"><br><h3>Figure: Mean squared end-to-end distance (h2(N)) vs N</h3><img src="h2vsN.png" alt="h2vsN.png" style="width:400px;"><br>
+        <h2>Files Summary</h2>
+        <table border="1">
+            <tr>
+                <th>File</th>
+                <th>Checksum</th>
+            </tr>
+        <tr><td>Chain3D10.png</td><td>7c6e918eb7b3988cb9279c42163feeee</td></tr><tr><td>Chain3D100.png</td><td>c479f1cc0585f58ee0b99bdbcdb7c898</td></tr><tr><td>Chain3D200.png</td><td>1a8b232a01d92a241d8da4c59e03a273</td></tr><tr><td>Chain3D400.png</td><td>2d4a03fb8533fef71bab9fb154f06a0f</td></tr><tr><td>Chain3D50.png</td><td>78ef481b1a6bc86fa80ff277695da6ba</td></tr><tr><td>h2vsN.png</td><td>d8db048f6760a3ca97cbf20598398dd6</td></tr><tr><td>h2vsN_verified.png</td><td>68dd73ab49466e699efb00a3d19a4d37</td></tr><tr><td>Polymer_Chain_Simulation_Report.docx</td><td>f1649b913cc81a76d3df449d3d22289b</td></tr><tr><td>summary.csv</td><td>cb92413e0aca533df86fb2443bd8029f</td></tr><tr><td>summary.txt</td><td>4307ad52d5cac4659437f9b847487ba1</td></tr>
+        </table>
+    </body>
+    </html>
+    

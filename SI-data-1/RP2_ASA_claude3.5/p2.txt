@@ -1,0 +1,75 @@
+(1) Modify the program to calculate the mean square end-to-end distance for a single N value, which should be externally input using argparse. For example, the program should be runnable with a command like 'python py1.py -n 100'. Remove the calculation of v and the plot of h2(N)~N. Save a single image with 50 conformations, and save the end-to-end distances and N in a text file. Ensure that the saved filename is related to the input value of N. Only modify the program; do not execute it.
+(2) After the modification, save it as py1.py. Then, write a Python program to assist in uploading py1.py to a remote node (details provided at the end of this prompt) and running py1.py in the background for N=100, 200, 300, 400, 600, 800. Check if the conformation images and test files for these N values exist. If they all exist, use SFTP to transfer the images and text files to the local directory. Check if they are in the local directory. If yes, read the N and h2 from each text file, save a h2(N)~N plot, and calculate the scaling law of h2(N)=N^v. Print the value of v.
+(3) Utilize Python to generate a Word document and compose a detailed simulated experiment report (1000 words) based on the generated graphs and the provided instructions. Choose a suitable title and divide the report into four sections: begin with an abstract, followed by an 'Introduction' to briefly introduce the purpose and background, 'Methods' to discuss the programming approach and methods used, and 'Results' to present the findings, incorporating the graphs from the second and third tasks and referencing them in the text (e.g., 'as shown in Fig. 1'). Each section should contain approximately 300 to 500 words.
+
+[python program]
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import random
+
+def generate_random_unit_vector():
+    theta = np.random.uniform(0, np.pi*2)
+    phi = np.arccos(2 * np.random.uniform(0, 1) - 1)
+    x = np.sin(phi) * np.cos(theta)
+    y = np.sin(phi) * np.sin(theta)
+    z = np.cos(phi)
+    return np.array([x, y, z])
+
+def generate_polymer_chain(N):
+    positions = np.zeros((N, 3))
+    for i in range(1, N):
+        positions[i] = positions[i - 1] + generate_random_unit_vector()
+    return positions
+
+def calculate_end_to_end_distance(chain):
+    return np.sum((chain[-1] - chain[0])**2)
+
+def plot_polymer_chains(N, chains_to_plot):
+    fig = plt.figure(figsize=(10, 8))
+    ax = fig.add_subplot(111, projection='3d')
+    for chain in chains_to_plot:
+        positions = generate_polymer_chain(N)
+        ax.plot(positions[:, 0], positions[:, 1], positions[:, 2])
+    plt.title(f'Polymer Chains with N={N}')
+    plt.savefig(f'Chain3D_{N}.png')
+    plt.close()
+
+def main():
+    N_values = [10, 50, 100, 200, 400]
+    num_chains = 2000
+    for N in N_values:
+        end_to_end_distances = []
+        sample_chains = random.sample(range(num_chains), 50)
+        chains_to_plot = []
+        for i in range(num_chains):
+            chain = generate_polymer_chain(N)
+            distance = calculate_end_to_end_distance(chain)
+            end_to_end_distances.append(distance)
+            if i in sample_chains:
+                chains_to_plot.append(chain)
+        plot_polymer_chains(N, chains_to_plot)
+        h2 = np.mean(end_to_end_distances)
+        print(f'N={N}, Mean Square End-to-End Distance h2(N)={h2}')
+
+    # Determine scaling relation h2(N) ~ N^v
+    log_N = np.log(N_values)
+    log_h2 = np.log([np.mean([calculate_end_to_end_distance(generate_polymer_chain(N)) for _ in range(num_chains)]) for N in N_values])
+    polyfit = np.polyfit(log_N, log_h2, 1)
+    v = polyfit[0]
+    print(f'Scaling Relation: h2(N) ~ N^{v}')
+
+if __name__ == "__main__":
+    main()
+[END of python program]
+
+[Information of Remote Node]:
+use paramiko to connect the remote node
+hostname = '*****'
+username = '*****'
+password = '*****'
+remote_path = '*****'
+python_path= '*****'
+use command = f"bash -l -c 'cd {remote_path} && {python_path}{remote_python_file} {pars_args}'" to excute remote python file
+
+
