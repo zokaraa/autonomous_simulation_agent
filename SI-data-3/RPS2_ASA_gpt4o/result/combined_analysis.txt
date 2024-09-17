@@ -1,0 +1,4 @@
+Minimum Distance: 88302735.92 km at 2024-10-04 17:52:48.763904
+Maximum Distance: 660347446.12 km at 2024-03-03 00:35:05.664252
+Average Distance: 391091934.23 km
+Standard Deviation of Distances: 217831114.30 km
