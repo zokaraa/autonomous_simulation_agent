@@ -9,7 +9,7 @@ import time
 import sys
 import anthropic
 # NO SSH
-# BUT we ask AI to check carefully about each step he has done
+# BUT we ask AI to check carefully about each step it has done
 
 error_limit = 5
 pyfile_limit = 12

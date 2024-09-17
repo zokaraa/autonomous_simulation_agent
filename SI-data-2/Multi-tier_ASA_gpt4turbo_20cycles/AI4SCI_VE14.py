@@ -7,7 +7,7 @@ import subprocess
 import re
 import sys
 # NO SSH
-# BUT we ask AI to check carefully about each step he has done
+# BUT we ask AI to check carefully about each step it has done
 
 
 def get_file_names():
