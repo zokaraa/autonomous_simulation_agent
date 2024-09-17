@@ -1,5 +1,9 @@
 # Autonomous simulation agent (ASA)
-This study explores the feasibility of constructing an **autonomous simulation agent (ASA) powered by LLM to automate an entire simulation research process, from experimental design, remote upload and simulation execution, data analysis, to report compilation**, after a research plan (RP) is provided to the ASA by human researchers. The ASA leverages an **API automation program (AutoProg)** to enable multi-round text interactions with LLMs via API, thus achieving full automation of the research process. ASA can solve problems across different scientific domains. In our paper, we designed several RPs to demonstrate the power of ASA, which are related to the following problems:
+This study explores the feasibility of constructing an **autonomous simulation agent (ASA) powered by LLM to automate an entire simulation research process, from experimental design, remote upload and simulation execution, data analysis, to report compilation**, after a research plan (RP) is provided to the ASA by human researchers. 
+
+The ASA leverages an **API automation program (AutoProg)** to enable multi-round text interactions with LLMs via API, thus achieving full automation of the research process. ASA can solve problems across different scientific domains. 
+
+In our paper, we designed several RPs to demonstrate the power of ASA, which are related to the following problems:
 - **polymer chain conformation simulation: RP 1-3 ([SI-data-1](/SI-data-1)), main AI generating RP and Multitier human RP ([SI-data-2](/SI-data-2))**
 - **gravitational simulation: RP S1-S2 ([SI-data-3](/SI-data-3))**
 
