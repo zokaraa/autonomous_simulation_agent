@@ -23,16 +23,16 @@ We provide partial **AutoProgs and experimental result files** for:
 AutoProg Notice: API account and server information has been obscured in the AutoProg.py; you can replace it with your own information and follow the instructions to run the AutoProgs.
 
 ## 3.1 SI-data-1
-([SI-data-1](/SI-data-1)) include partial AutoProgs and experimental result files for **RP 1-3**
+[SI-data-1](/SI-data-1) includes partial AutoProgs and experimental result files for **RP 1-3**
 - **RP 1** requires generating a Python program to simulate a random walk, sampling different numbers of chain segments *N*, deriving the scaling relation $\left \langle R^2 \right \rangle \propto N^v$, saving chain conformation graphs and scaling relation fit plots, and writing a research report.
 - **RP 2** directly provides a random walk simulation program, asking the ASA to modify it, run simulations in a designated folder on a remote server, download the experimental data, and generate graphs and plots and a research report.
 - **RP 3** is similar to RP 1 but includes both random walk and self-avoiding walk simulations.
 
 ## 3.2 SI-data-2
-([SI-data-2](/SI-data-2)) include partial AutoProgs and experimental result files for **Main AI generating RP and Multitier human RP**
+[SI-data-2](/SI-data-2) includes partial AutoProgs and experimental result files for **Main AI generating RP and Multitier human RP**
 
 ## 3.3 SI-data-3
-([SI-data-3](/SI-data-3)) include partial AutoProgs and experimental result files for **RP S1-S2**
+[SI-data-3](/SI-data-3) includes partial AutoProgs and experimental result files for **RP S1-S2**
 
 # 4. Demo video
 Additionally, we have created a **demo video** ([SI-video.mp4](SI-video.mp4)) demonstrating the operation process of the automatic research system.
