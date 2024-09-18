@@ -24,8 +24,7 @@ AutoProg Notice: API account and server information has been obscured in the Aut
 
 ## 3.1 SI-data-1
 ([SI-data-1](/SI-data-1)) include partial AutoProgs and experimental result files for **RP 1-3**
-\item \textbf{RP 1} 
-	requires generating a Python program to simulate a random walk, sampling different numbers of chain segments \textit{N}, deriving the scaling relation $\left \langle R^2 \right \rangle \propto N^v$, saving chain conformation graphs and scaling relation fit plots, and writing a research report.
+- **RP 1** requires generating a Python program to simulate a random walk, sampling different numbers of chain segments \textit{N}, deriving the scaling relation $\left \langle R^2 \right \rangle \propto N^v$, saving chain conformation graphs and scaling relation fit plots, and writing a research report.
 
 ## 3.2 SI-data-2
 ([SI-data-2](/SI-data-2)) include partial AutoProgs and experimental result files for **Main AI generating RP and Multitier human RP**
