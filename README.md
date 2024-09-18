@@ -39,4 +39,4 @@ Agent AI to fulfill RP 1 contained in p1.txt, while the Primary AI collects all 
 
 # 3. Demo video
 Additionally, we have created a **demo video** ([SI-video.mp4](SI-video.mp4)) demonstrating the operation process of the automatic research system.
-*Please download the raw file.
+*Please download the raw file to watch the demo video.
