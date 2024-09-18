@@ -7,4 +7,4 @@
 
 AutoProg AI4SCI_VE13.py will read the RP in p1.txt and autonomously run the simulation research process. The LLM conversation history is stored in out.txt. 
 
-You can replace the RP to initiate your own research process.
+**You can replace the content of p1.txt with your own RP to initiate your research process.**
