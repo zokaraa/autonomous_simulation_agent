@@ -11,7 +11,7 @@ In our paper, we designed several RPs to demonstrate the power of ASA, which are
 
 **Our paper is available on [https://arxiv.org/abs/2408.15512](https://arxiv.org/abs/2408.15512).**
 
-[SI.pdf](SI.pdf) provides 1) RP1-3, 2) partial result figures for gravitational simulation mission, and 3) examples of reports written by ASAs. *Please download the raw file to see SI.pdf.
+[SI.pdf](SI.pdf) provides 1) RP1-3, 2) partial result figures for gravitational simulation mission, and 3) examples of reports written by ASAs. *Please download the raw file to view SI.pdf.
 
 # 2. AutoProgs and experimental result files
 In this repository we provide partial **AutoProgs and experimental result files** for:
