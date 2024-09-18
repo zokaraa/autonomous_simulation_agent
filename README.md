@@ -34,10 +34,9 @@ AutoProg Notice: API account and server information has been obscured in the Aut
 - **Multitier human RP:** In this section, we automate multiple rounds of RP 1 execution. We designed **RP4**, which is nested within RP 1, instructing a Primary AI to execute the command “python AutoProg.py -s p1.txt -n i” 20 times. Each execution generates an
 Agent AI to fulfill RP 1 contained in p1.txt, while the Primary AI collects all generated files and conducts result analysis.
 
-
-
 ## 3.3 SI-data-3: AutoProgs for RP S1-S2
 [SI-data-3](/SI-data-3) includes partial AutoProgs and experimental result files for **RP S1-S2**
+- **RP S1** requires using the Skyfield Python library (which needs to be pre-installed via pip) to obtain information on the position, velocity, and mass of certain celestial bodies in the Solar System on January 1, 2024. Using the gravitational formula $U=-\frac{G\cdot m_{1}\cdot m_{2}}{r^{\beta}}$, it requires simulating the motion of these bodies over the next year, with $\beta$ set to 1 and 1.001 respectively, plotting the trajectories of the celestial bodies and writing a report on the findings.
 
 # 4. Demo video
 Additionally, we have created a **demo video** ([SI-video.mp4](SI-video.mp4)) demonstrating the operation process of the automatic research system.
