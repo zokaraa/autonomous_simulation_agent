@@ -1,5 +1,5 @@
 # 1. Autonomous simulation agent (ASA)
-This study explores the feasibility of constructing an **autonomous simulation agent (ASA)** powered by LLM to automate an entire simulation research process, from experimental design, remote upload and simulation execution, data analysis, to report compilation, after a **research plan (RP)** is provided to the ASA by human researchers. 
+This study explores the feasibility of constructing an **autonomous simulation agent (ASA)** powered by LLM to **automate an entire simulation research process**, from experimental design, remote upload and simulation execution, data analysis, to report compilation, after a **research plan (RP)** is provided to the ASA by human researchers. 
 
 *Notice: ASA is a general-purpose fully autonomous simulation agent that **can independently complete any simulation-related task**, as long as the user provides a detailed RP.
 
