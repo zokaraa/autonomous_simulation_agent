@@ -36,6 +36,7 @@ Agent AI to fulfill RP 1 contained in p1.txt, while the Primary AI collects all 
 ## 2.3 SI-data-3: AutoProgs for RP S1-S2
 [SI-data-3](/SI-data-3) includes partial AutoProgs and experimental result files for **RP S1-S2**
 - **RP S1** requires using the Skyfield Python library (which needs to be pre-installed via pip) to obtain information on the position, velocity, and mass of certain celestial bodies in the Solar System on January 1, 2024. Using the gravitational formula $U=-\frac{G\cdot m_{1}\cdot m_{2}}{r^{\beta}}$, it requires simulating the motion of these bodies over the next year, with $\beta$ set to 1 and 1.001 respectively, plotting the trajectories of the celestial bodies and writing a report on the findings.
+- **RP S2** requires finding a Python library to obtain information of more celestial bodies in the Solar System. Additionally, assuming an asteroid is moving towards Earth from a certain location, it requires simulating the motion of these bodies, including the asteroid, over the next year, plotting the trajectories of them and creating a distance curve between the Earth and the asteroid, and finally writing a report.
 
 # 3. Demo video
 Additionally, we have created a **demo video** ([SI-video.mp4](SI-video.mp4)) demonstrating the operation process of the automatic research system.
