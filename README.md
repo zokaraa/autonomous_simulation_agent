@@ -30,6 +30,8 @@ AutoProg Notice: API account and server information has been obscured in the Aut
 
 ## 3.2 SI-data-2: AutoProgs for Main AI generating RP and Multitier human RP
 [SI-data-2](/SI-data-2) includes partial AutoProgs and experimental result files for **Main AI generating RP and Multitier human RP**
+- **Main AI generating RP:** In the preceding section, RPs were provided by humans. In this section, we task a Main AI with automatically breaking down a human-provided RP into sub-tasks and distributing them as AI RPs to several Subordinate AIs. We provided RP 1 directly to the Master AI, adjusting the ASA to ensure each sub-task was handled by a distinct Subordinate AI without access to the Main AI’s or other Subordinate AIs’ conversation histories. The Main AI solely presents the AI RPs (Figure S1A) and received reports upon task completion.
+
 
 ## 3.3 SI-data-3: AutoProgs for RP S1-S2
 [SI-data-3](/SI-data-3) includes partial AutoProgs and experimental result files for **RP S1-S2**
