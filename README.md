@@ -26,10 +26,10 @@ AutoProg Notice: API account and server information has been obscured in the Aut
 ([SI-data-1](/SI-data-1)) include partial AutoProgs and experimental result files for **RP 1-3**
 
 ## 3.2 SI-data-2
-([SI-data-1](/SI-data-1)) include partial AutoProgs and experimental result files for **Main AI generating RP and Multitier human RP**
+([SI-data-2](/SI-data-2)) include partial AutoProgs and experimental result files for **Main AI generating RP and Multitier human RP**
 
 ## 3.3 SI-data-3
-([SI-data-1](/SI-data-1)) include partial AutoProgs and experimental result files for **RP S1-S2**
+([SI-data-3](/SI-data-3)) include partial AutoProgs and experimental result files for **RP S1-S2**
 
 # 4. Demo video
 Additionally, we have created a **demo video** ([SI-video.mp4](SI-video.mp4)) demonstrating the operation process of the automatic research system.
