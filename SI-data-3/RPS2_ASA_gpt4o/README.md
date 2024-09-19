@@ -5,6 +5,6 @@
 # Windows CMD command to run ASA
 ```python AI4SCI_VE13.py -s p6.txt > out.txt```
 
-AutoProg AI4SCI_VE13.py will read the RP in p6.txt and autonomously run the simulation research process. The LLM conversation history is stored in out.txt. 
+AutoProg AI4SCI_VE13.py will read the RP in p6.txt and autonomously run the simulation research process. The LLM conversation history is stored in out.txt. ([result](result)) folder contains sample results.
 
 **You can replace the content of p6.txt with your own RP to initiate your research process.**
