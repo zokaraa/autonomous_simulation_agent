@@ -3,8 +3,7 @@ ASA utilizes an automatic program AutoProg, which is based on Python3 to interac
 
 ASA is a general-purpose end-to-end simulation agent that **can independently complete simulation-related task across different sientific domains**, as long as the user provides a detailed RP.
 
-**paper information:**
-
+# 1.1 Paper Information
 In our paper, we designed several RPs to demonstrate the power of ASA, which are related to the following problems:
 - **Polymer chain conformation simulation:** RP 1-3 ([SI-data-1](/SI-data-1)), Main AI generating RP and Multitier human RP ([SI-data-2](/SI-data-2))
 - **Gravitational simulation:** RP S1-S2 ([SI-data-3](/SI-data-3))
