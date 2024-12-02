@@ -32,25 +32,25 @@ Place the AutoProg.py and RP.txt files in your working directory, enter the work
 ASA will read the contents of the RP and execute the automatic simulation research process according to RP’s requirements. All Python programs written by ASA, along with generated images and Word documents, will be saved in the current working directory. Additionally, ASA will generate an output file to record the conversation history with the LLM and the output and errors of the Python programs it has written.
 
 In this repository we provide partial **AutoProgs and sample result files** for:
-- **RP 1-3** ([SI-data-1](/SI-data-1))
-- **Main AI generating RP and Multitier human RP** ([SI-data-2](/SI-data-2))
-- **RP S1-S2** ([SI-data-3](/SI-data-3))
+- **Sample problem of Random-walk Chain Simulation: RP 1-3** ([SI-data-1](/SI-data-1))
+- **Manager-Executor AI mode and Multitier RPs** ([SI-data-2](/SI-data-2))
+- **Challenging problem of Universal Gravitation Simulation: RP S1-S2** ([SI-data-3](/SI-data-3))
 
 ***AutoProg Notice:** **API account and server information has been obscured in the AutoProg.py**; you can replace it with your own information and follow the instructions to run the AutoProgs.
 
-## 4.1 SI-data-1: AutoProgs for RP 1-3
+## 4.1 SI-data-1: AutoProgs for Sample problem of Random-walk Chain Simulation
 [SI-data-1](/SI-data-1) includes partial AutoProgs and experimental result files for **RP 1-3**.
 - **RP 1** requires generating a Python program to simulate a random walk, sampling different numbers of chain segments *N*, deriving the scaling relation $\left \langle R^2 \right \rangle \propto N^v$, saving chain conformation graphs and scaling relation fit plots, and writing a research report.
 - **RP 2** directly provides a random walk simulation program, asking the ASA to modify it, run simulations in a designated folder on a remote server, download the experimental data, and generate graphs and plots and a research report.
 - **RP 3** is similar to RP 1 but includes both random walk and self-avoiding walk simulations.
 
-## 4.2 SI-data-2: AutoProgs for Main AI generating RP and Multitier human RP
-[SI-data-2](/SI-data-2) includes partial AutoProgs and experimental result files for **Main AI generating RP and Multitier human RP**.
-- **Main AI generating RP:** In the preceding section, RPs were provided by humans. In this section, we task a Main AI with automatically breaking down a human-provided RP into sub-tasks and distributing them as AI RPs to several Subordinate AIs. We provided RP 1 directly to the Master AI, adjusting the ASA to ensure each sub-task was handled by a distinct Subordinate AI without access to the Main AI’s or other Subordinate AIs’ conversation histories. The Main AI solely presents the AI RPs (Figure S1A) and received reports upon task completion.
-- **Multitier human RP:** In this section, we automate multiple rounds of RP 1 execution. We designed **RP4**, which is nested within RP 1, instructing a Primary AI to execute the command “python AutoProg.py -s p1.txt -n i” 20 times. Each execution generates an
+## 4.2 SI-data-2: AutoProgs for Manager-Executor AI mode and Multitier RPs
+[SI-data-2](/SI-data-2) includes partial AutoProgs and experimental result files for **Manager-Executor AI mode and Multitier RPs**.
+- **Manager-Executor AI mode:** In the preceding section, the ASA used a single AI to execute all the content provided in the RP given by human. In this section, we adjusted the logic for storing and managing dialogue history with the LLM within the ASA. We introduced a Manager AI that automatically breaks down a human-provided RP into sub-tasks and distributes them as sub-RPs to multiple Executor AIs. Each Executor AI is unaware of the dialogue history of the Manager AI and other Executor AIs, focusing solely on executing the assigned sub-RP. In contrast, the Manager AI solely presents the sub-RPs and receives reports upon task completion.
+- **Multitier RPs:** In this section, we automate multiple rounds of RP 1 execution. We designed **RP4**, which is nested within RP 1, instructing a Primary AI to execute the command “python AutoProg.py -s p1.txt -n i” 20 times. Each execution generates an
 Agent AI to fulfill RP 1 contained in p1.txt, while the Primary AI collects all generated files and conducts result analysis.
 
-## 4.3 SI-data-3: AutoProgs for RP S1-S2
+## 4.3 SI-data-3: AutoProgs for Challenging problem of Universal Gravitation Simulation
 [SI-data-3](/SI-data-3) includes partial AutoProgs and experimental result files for **RP S1-S2**.
 - **RP S1** requires using the Skyfield Python library (which needs to be pre-installed via pip) to obtain information on the position, velocity, and mass of certain celestial bodies in the Solar System on January 1, 2024. Using the gravitational formula $U=-\frac{G\cdot m_{1}\cdot m_{2}}{r^{\beta}}$, it requires simulating the motion of these bodies over the next year, with $\beta$ set to 1 and 1.001 respectively, plotting the trajectories of the celestial bodies and writing a report on the findings.
 - **RP S2** requires finding a Python library to obtain information of more celestial bodies in the Solar System. Additionally, assuming an asteroid is moving towards Earth from a certain location, it requires simulating the motion of these bodies, including the asteroid, over the next year, plotting the trajectories of them and creating a distance curve between the Earth and the asteroid, and finally writing a report.
