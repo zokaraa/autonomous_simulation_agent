@@ -5,7 +5,7 @@ ASA utilizes an automatic program **AutoProg**, which is based on Python3 to int
 
 # 1.1 Paper Information
 In our paper, we designed several RPs to demonstrate the power of ASA, which are related to the following problems:
-- **Polymer chain conformation simulation:** RP 1-3 ([SI-data-1](/SI-data-1)), Main AI generating RP and Multitier human RP ([SI-data-2](/SI-data-2))
+- **Polymer chain conformation simulation:** RP 1-3 ([SI-data-1](/SI-data-1)), Manager-Executor AI mode and Multitier RP mode ([SI-data-2](/SI-data-2))
 - **Gravitational simulation:** RP S1-S2 ([SI-data-3](/SI-data-3))
 
 **Our paper is available on [https://arxiv.org/abs/2408.15512](https://arxiv.org/abs/2408.15512).**
@@ -33,7 +33,7 @@ ASA will read the contents of the RP and execute the automatic simulation resear
 
 In this repository we provide partial **AutoProgs and sample result files** for:
 - **Sample problem of Random-walk Chain Simulation: RP 1-3** ([SI-data-1](/SI-data-1))
-- **Manager-Executor AI mode and Multitier RPs** ([SI-data-2](/SI-data-2))
+- **Manager-Executor AI mode and Multitier RP mode** ([SI-data-2](/SI-data-2))
 - **Challenging problem of Universal Gravitation Simulation: RP S1-S2** ([SI-data-3](/SI-data-3))
 
 ***AutoProg Notice:** **API account and server information has been obscured in the AutoProg.py**; you can replace it with your own information and follow the instructions to run the AutoProgs.
@@ -44,10 +44,10 @@ In this repository we provide partial **AutoProgs and sample result files** for:
 - **RP 2** directly provides a random walk simulation program, asking the ASA to modify it, run simulations in a designated folder on a remote server, download the experimental data, and generate graphs and plots and a research report.
 - **RP 3** is similar to RP 1 but includes both random walk and self-avoiding walk simulations.
 
-## 4.2 SI-data-2: AutoProgs for Manager-Executor AI mode and Multitier RPs
-[SI-data-2](/SI-data-2) includes partial AutoProgs and experimental result files for **Manager-Executor AI mode and Multitier RPs**.
+## 4.2 SI-data-2: AutoProgs for Manager-Executor AI mode and Multitier RP mode
+[SI-data-2](/SI-data-2) includes partial AutoProgs and experimental result files for **Manager-Executor AI mode and Multitier RP mode**.
 - **Manager-Executor AI mode:** In the preceding section, the ASA used a single AI to execute all the content provided in the RP given by human. In this section, we adjusted the logic for storing and managing dialogue history with the LLM within the ASA. We introduced a Manager AI that automatically breaks down a human-provided RP into sub-tasks and distributes them as sub-RPs to multiple Executor AIs. Each Executor AI is unaware of the dialogue history of the Manager AI and other Executor AIs, focusing solely on executing the assigned sub-RP. In contrast, the Manager AI solely presents the sub-RPs and receives reports upon task completion.
-- **Multitier RPs:** In this section, we automate multiple rounds of RP 1 execution. We designed **RP4**, which is nested within RP 1, instructing a Primary AI to execute the command “python AutoProg.py -s p1.txt -n i” 20 times. Each execution generates an
+- **Multitier RP mode:** In this section, we automate multiple rounds of RP 1 execution. We designed **RP4**, which is nested within RP 1, instructing a Primary AI to execute the command “python AutoProg.py -s p1.txt -n i” 20 times. Each execution generates an
 Agent AI to fulfill RP 1 contained in p1.txt, while the Primary AI collects all generated files and conducts result analysis.
 
 ## 4.3 SI-data-3: AutoProgs for Challenging problem of Universal Gravitation Simulation
