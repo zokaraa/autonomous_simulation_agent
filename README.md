@@ -1,7 +1,7 @@
 # 1. Autonomous simulation agent (ASA)
 ASA utilizes an automatic program AutoProg, which is based on Python3 to interact with Large Language Models (LLMs) (via API) through prompt engineering, following a pre-designed logic. At different stages of the automated process, AutoProg prompts the LLM to respond accordingly. Thus, according to the text-based Research Plan (RP) provided by the user, ASA can automatically execute end-to-end simulation research processes that include computer simulations based on Python, data statistics, plotting, and report writing.
 
-ASA is a general-purpose end-to-end simulation agent that **can independently complete simulation-related task across different sientific domains**, as long as the user provides a detailed RP.
+ASA is a general-purpose end-to-end simulation agent that **can independently complete simulation-related tasks across different sientific domains**, as long as the user provides a detailed RP.
 
 # 1.1 Paper Information
 In our paper, we designed several RPs to demonstrate the power of ASA, which are related to the following problems:
