@@ -10,7 +10,7 @@ In our paper, we designed several RPs to demonstrate the power of ASA, which are
 
 **Our paper is available on [https://arxiv.org/abs/2408.15512](https://arxiv.org/abs/2408.15512).**
 
-[SI.pdf](SI.pdf) provides 1) RP1-3, 2) partial result figures for gravitational simulation mission, and 3) examples of reports written by ASAs. *Please download the raw file to view SI.pdf.
+[SI_with_reports.pdf](SI_with_reports.pdf) provides 1) RP1-3, 2) partial result figures for gravitational simulation mission, 3) results for AI-designed RP along with examples of reports written by ASAs and 4) examples of reports written by ASAs. *Please download the raw file to view SI_with_reports.pdf.
 
 # 2. Writing the Research Plan
 The Research Plan is designed by humans and saved in txt file. Users can modify or replace it according to their own tasks. When modifying or replacing the RP, please note that ASA will execute the process based on the content of the RP. To improve the quality of ASA's task completion, the RP should contain as detailed information as possible, including the simulation methods required for the AI to use in the simulation program, modeling settings, parameter settings, as well as subsequent data processing requirements, plotting, and Word report requirements.
